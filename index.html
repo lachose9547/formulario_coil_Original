@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_COIL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="cuerpo">
+   <!--  inicio <h1>Certificados de COIL</h1>del form --> 
+<div class="container">
+
+       <di class="form-contain">
+        <img src="imagen/loyoa.jpg"  class="img-loyola">
+         <h3> Certificados COIL</h3>
+<!--  inicio del form -->
+      <form  class="form_loyola" autocomplete="off" >
+            <div class="input-group">
+
+               <div class="input-field" id="nameInput">
+                 <i class="fa-solid fa-user" ></i>
+                  <input type="text" id="nombre"  placeholder="Usuario"   autocomplete="off">
+                </div>
+
+
+       <div class="input-group">
+
+        <div class="input-field">
+           <i class="fa-solid fa-lock icono" ></i>
+           <input id="contrasena" type="password" name="clave" autocomplete="off"  placeholder="Contraseña">
+       </div>
+
+    </div>     
+   </form>
+   <!--  fin  del form -->
+      <di  class="btn">
+            <button onclick="validarInput()"class="boton1" type="button">Buscar</button>
+            <button onclick="validarInputCancelar()"   id="cancelar" class="boton2" type="button">Cancelar</button><br></di>
+         <div id="mensaje" style="color:#FFEB3B ;">
+
+         </div>
+         </di>
+
+    </di>
+</div>
+   
+    <script src="app/scrip.js"></script>
+    <script   src="app/conexion.js"></script>
+    
+</body>
+</html>

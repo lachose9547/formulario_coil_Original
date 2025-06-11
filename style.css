@@ -1,0 +1,290 @@
+/*/{
+    margin-top: 0;
+    padding-top: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-repeat: no-repeat;     
+
+}*/
+.cuerpo {
+    background-image: url(imagen/artificial-intelligence-3382507_1280.jpg);
+  background-size: cover;           /* Hace que la imagen cubra todo el fondo */
+  background-repeat: no-repeat;     /* Evita que la imagen se repita */
+  background-position: center;      /* Centra la imagen */
+  height: 100vh;                    /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;  
+  
+}
+h3{
+  text-align: center;  
+  color:#2e3c54 ;
+  background-repeat: no-repeat;
+  font-family: roboto;
+        
+    
+
+}
+/*/Logo**/  
+.img-loyola{
+  
+   margin: 0 auto;
+  padding-top: 0;
+   width: 140px;
+  height: auto;
+  display: block;
+  border-radius: 130px;
+
+}
+
+
+/*/Contenedor**/  
+.container{
+     margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-repeat: no-repeat;
+   
+}
+
+/*/Caja de formulario**/  
+.form-contain
+{
+ width: 100%;
+max-width: 300px;
+background: linear-gradient(to bottom, rgb(27, 43, 69) 0%, rgba(27, 43, 69, 0.8) 100%, rgba(27, 43, 69, 0.4) 70%, transparent 100%);
+padding: 70px  160px 75px ;
+border-radius: 30px; 
+  
+}
+
+.form-contain h3{
+   font-size: 30px;
+    margin-bottom: 30px;
+    color: aliceblue;
+    position: relative;
+ 
+}
+
+.form-contain h3::after{
+   content:'';
+   width:40px;
+   height: 4px;
+   border-radius: 3px;
+   background-color: #2196F3;
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.input-field{
+    margin: 10PX 0;
+    display: flex;
+    padding: 10;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+  border-bottom: 2px solid #2196F3; ; 
+ /* border-bottom: 2px solid rgb(27, 43, 69); */
+  outline: none;
+  font-size: 23px;
+  background-color: transparent;
+  transition: border-color 0.10s;
+}
+
+/*contenedor del input**/
+.input-field
+{
+display:flex;
+justify-content:center; 
+align-items: center;
+gap: 3px;
+ }
+
+
+/* Mensaje del input**/
+#mensaje{
+  text-align: center;
+  font-size: 23px;  
+}
+
+/* la entrada del formulario **/
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 10px 5px;
+    outline: none;
+    color: #FFFFFF ;
+    font-family: roboto;
+    font-size: medium; 
+     position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 25px;
+}
+
+input::placeholder{
+color :#FFFFFF;
+height:4px;
+display:flex;
+justify-content:right; 
+align-items: center;
+ gap: 8px; /* Espacio entre ícono y texto */
+margin-bottom: 5px;
+font-size: 23px;
+}
+.input-field i
+{
+ margin-left:5px;
+ color: #2196F3;
+
+}
+/* Los Botones usando flexbox **/
+
+.btn{/* contenedor de botones*/
+display:flex;
+justify-content: center; 
+align-items: center;
+gap: 15px;
+padding: 25px;
+
+  
+}
+
+.boton2
+{
+      background-color: #2196F3;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 3px 15px;
+    outline: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: roboto;
+    height: 40px;
+    line-height: 1.5;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton2:hover{
+  background-color: #FFEB3B;
+color: black;
+text-rendering: initial;
+}
+.boton1
+{
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 3px 15px;
+    outline: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 1.4rem;
+    height: 40px;
+    font-family: roboto;
+    line-height: 1.5;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton1:hover
+{
+background-color: #FFEB3B;
+color: black;
+text-rendering: initial;
+}
+
+@media (max-width: 768px) {
+  /** (-ms-high-contrast: active), (-ms-high-contrast: none)**/
+  .container {
+    /*height: auto;**/
+    height: 700px;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .form-contain {
+    padding: 40px 40px 30px;   
+    margin: 0 15px; 
+    max-width: 90%;
+    border-radius: 20px;
+  }
+
+/*
+.form-contain {
+  width: 100%;
+  max-width: 480px; /* Ajusta a lo que prefieras 
+  padding: 40px 40px 30px;
+  margin: 0 auto; /* Centrado horizontal 
+  border-radius: 20px;
+}
+**/
+  .form-contain h3 {
+    font-size: 24px;
+  }
+
+  .input-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input::placeholder {
+    font-size: 22px;
+  }
+
+  #mensaje {
+    font-size: 23px;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .boton1,
+  .boton2 {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 45px;
+    font-size: 22px;
+    
+  }
+  .boton1
+  .boton2:hover
+  {
+  background-color: #FFEB3B;
+  color: black;
+  text-rendering: initial;
+   transition: background-color 0.25s ease, color 0.50s ease;
+
+     }
+/*
+ boton2:hover
+ {
+  background-color: #FFEB3B;
+  color: black;
+  text-rendering: initial;
+     }*/
+
+  .img-loyola {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+ 
