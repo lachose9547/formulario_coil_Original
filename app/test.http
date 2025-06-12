@@ -1,0 +1,11 @@
+GET http://localhost:3005/api/usuarios HTTP/1.1
+
+###
+
+POST http://localhost:3005/login  
+Content-Type: application/json
+
+{
+    "usuario": "123456789",
+    "contrasena": "juan123456"
+}
