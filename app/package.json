@@ -2,16 +2,18 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "conexion.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch conexion.js",
+    "dev": "node --watch app.js",
+    "start": "node app.js",
     "prod": "node  conexion.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mysql": "^2.18.1"
   }
