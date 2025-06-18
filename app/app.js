@@ -23,6 +23,8 @@ app.use(cors({
 }));
 */
 
+//data base adding
+
 app.get('/form', (req, res) => {
   console.log("Petición recibida para /form");
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
